@@ -1,0 +1,4 @@
+=== Stage 1 Verification ===
+1003/1003 test vectors PASSED (3 NIST + 1000 random)
+1003/1003 FPGA UART tests PASSED on Nexys 4 DDR
+

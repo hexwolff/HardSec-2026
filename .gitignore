@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Vivado
+*.jou
+*.log
+*.pb
+*.rpx
+*.dcp
+*.bit
+*.ltx
+*.wdb
+*.str
+.Xil/
+xsim.dir/
+*.vvp
+xvlog.*
+
+# Simulation artifacts
+tb/sim_debug
+tb/sim_patched
+
+# Traces (large binary files)
+sca/traces/
+sca/traces_masked/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Large video files (upload separately or use Git LFS)
+*.mp4
+
+# Submission HTML (generated, large with base64 images)
+submission/HardSec2026_Report.html
+
+# Submission binaries (tracked via LFS or excluded)
+submission/HardSec2026_Report.html
+submission/stage2/vivado_reports/nexys4ddr_patched_routed.dcp
+report/HardSec2026_Report.html
+clockInfo.txt
+xvlog.*
+
+# Large binary files in submission media
+submission/stage1/media/*.mp4
+submission/stage2/media/*.mp4

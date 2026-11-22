@@ -1,0 +1,6 @@
+=== Stage 2 Verification ===
+103/103 masked AES test vectors PASSED (3 NIST + 100 random)
+CPA Attack (unpatched): 16/16 bytes recovered, PGE=0 at ≤420 traces
+CPA Attack (masked): 0/16 bytes recovered with 5000 traces
+TVLA (unpatched): Max |t| = 102.5 (FAIL)
+TVLA (masked): Max |t| = 2.25 (PASS, < 4.5)

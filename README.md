@@ -70,20 +70,20 @@ A **round-iterative** AES-128 encryption engine — one round datapath reused ac
 │                   MASKED AES-128 CORE                               │
 │                                                                     │
 │   ┌───────────┐                                                     │
-│   │ PRNG LFSR │──── 128-bit random mask (refreshed per round)      │
+│   │ PRNG LFSR │──── 128-bit random mask (refreshed per round)       │
 │   │ (128-bit) │                                                     │
 │   └─────┬─────┘                                                     │
 │         ▼                                                           │
-│   ┌─────────────────┐    ┌────────────┐    ┌────────────┐          │
+│   ┌─────────────────┐    ┌────────────┐    ┌────────────┐           │
 │   │  Masked SubBytes │───▶│  ShiftRows │───▶│  MixCols   │          │
 │   │  (table re-init  │    │            │    │            │          │
 │   │   256 cyc/round) │    └────────────┘    └────────────┘          │
 │   └─────────────────┘                            │                  │
-│         ▲                                  ┌─────▼─────┐           │
+│         ▲                                  ┌─────▼─────┐            │
 │         │                                  │ AddRndKey  │           │
-│   T[x ⊕ m_in] = S(x) ⊕ m_out            └───────────┘           │
+│   T[x ⊕ m_in] = S(x) ⊕ m_out            └───────────┘               │
 │   (pre-computed masked table)                    │                  │
-│                                            ┌─────▼───────┐         │
+│                                            ┌─────▼───────┐          │
 │                                            │Key Expansion │         │
 │                                            └──────────────┘         │
 └─────────────────────────────────────────────────────────────────────┘

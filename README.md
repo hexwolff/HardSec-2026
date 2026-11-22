@@ -208,6 +208,19 @@ python3 sca/uart_fpga_verify.py       # Automated 1003-vector test
 
 ---
 
+## 🤖 AI Disclosure
+
+This project was built during a time-constrained hackathon with significant assistance from AI tools (Google Antigravity / Claude). AI was used for:
+
+- RTL code generation and debugging
+- Python SCA script development
+- Testbench creation and verification
+- Report and documentation generation
+
+All design decisions, architecture choices, verification results, and analysis were reviewed and validated by the author. The CPA attack methodology and Boolean masking countermeasure are based on published academic literature (cited in [References](#-references)).
+
+---
+
 <div align="center">
 <sub>Built for HardSec 2026 · November 2026</sub>
 </div>
